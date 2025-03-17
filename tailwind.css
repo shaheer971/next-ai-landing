@@ -1,0 +1,170 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --next-ai-3-framer-website-inter-bold-font-family: "Inter", Helvetica;
+  --next-ai-3-framer-website-inter-bold-font-size: 20px;
+  --next-ai-3-framer-website-inter-bold-font-style: normal;
+  --next-ai-3-framer-website-inter-bold-font-weight: 700;
+  --next-ai-3-framer-website-inter-bold-letter-spacing: -0.4000000059604645px;
+  --next-ai-3-framer-website-inter-bold-line-height: 26px;
+  --next-ai-3-framer-website-inter-light-font-family: "Inter", Helvetica;
+  --next-ai-3-framer-website-inter-light-font-size: 16px;
+  --next-ai-3-framer-website-inter-light-font-style: normal;
+  --next-ai-3-framer-website-inter-light-font-weight: 300;
+  --next-ai-3-framer-website-inter-light-letter-spacing: 0px;
+  --next-ai-3-framer-website-inter-light-line-height: 25.600000381469727px;
+  --next-ai-3-framer-website-inter-regular-font-family: "Inter", Helvetica;
+  --next-ai-3-framer-website-inter-regular-font-size: 20px;
+  --next-ai-3-framer-website-inter-regular-font-style: normal;
+  --next-ai-3-framer-website-inter-regular-font-weight: 400;
+  --next-ai-3-framer-website-inter-regular-letter-spacing: 0px;
+  --next-ai-3-framer-website-inter-regular-line-height: 24px;
+  --next-ai-3-framer-website-semantic-heading-1-font-family: "DM Sans",
+    Helvetica;
+  --next-ai-3-framer-website-semantic-heading-1-font-size: 58px;
+  --next-ai-3-framer-website-semantic-heading-1-font-style: normal;
+  --next-ai-3-framer-website-semantic-heading-1-font-weight: 500;
+  --next-ai-3-framer-website-semantic-heading-1-letter-spacing: -2.319999933242798px;
+  --next-ai-3-framer-website-semantic-heading-1-line-height: 69.5999984741211px;
+  --next-ai-3-framer-website-semantic-heading-2-font-family: "DM Sans",
+    Helvetica;
+  --next-ai-3-framer-website-semantic-heading-2-font-size: 48px;
+  --next-ai-3-framer-website-semantic-heading-2-font-style: normal;
+  --next-ai-3-framer-website-semantic-heading-2-font-weight: 500;
+  --next-ai-3-framer-website-semantic-heading-2-letter-spacing: -1.9199999570846558px;
+  --next-ai-3-framer-website-semantic-heading-2-line-height: 57.599998474121094px;
+  --next-ai-3-framer-website-semantic-heading-3-font-family: "DM Sans",
+    Helvetica;
+  --next-ai-3-framer-website-semantic-heading-3-font-size: 54px;
+  --next-ai-3-framer-website-semantic-heading-3-font-style: normal;
+  --next-ai-3-framer-website-semantic-heading-3-font-weight: 500;
+  --next-ai-3-framer-website-semantic-heading-3-letter-spacing: -2.160000085830689px;
+  --next-ai-3-framer-website-semantic-heading-3-line-height: 64.80000305175781px;
+  --next-ai-3-framer-website-semantic-heading-6-font-family: "DM Sans",
+    Helvetica;
+  --next-ai-3-framer-website-semantic-heading-6-font-size: 30px;
+  --next-ai-3-framer-website-semantic-heading-6-font-style: normal;
+  --next-ai-3-framer-website-semantic-heading-6-font-weight: 500;
+  --next-ai-3-framer-website-semantic-heading-6-letter-spacing: -0.600000023841858px;
+  --next-ai-3-framer-website-semantic-heading-6-line-height: 36px;
+  --next-ai-3framerwebsiteabbey: rgba(77, 78, 80, 1);
+  --next-ai-3framerwebsiteapple: rgba(84, 184, 72, 1);
+  --next-ai-3framerwebsiteatlantis: rgba(102, 189, 41, 1);
+  --next-ai-3framerwebsiteblack: rgba(0, 0, 0, 1);
+  --next-ai-3framerwebsiteblack-pearl: rgba(1, 2, 5, 1);
+  --next-ai-3framerwebsitebrick-red: rgba(214, 42, 67, 1);
+  --next-ai-3framerwebsitecerulean: rgba(19, 163, 215, 1);
+  --next-ai-3framerwebsitecrimson: rgba(227, 24, 55, 1);
+  --next-ai-3framerwebsitedenim: rgba(17, 122, 202, 1);
+  --next-ai-3framerwebsiteecstasy: rgba(245, 128, 37, 1);
+  --next-ai-3framerwebsiteendeavour: rgba(0, 87, 167, 1);
+  --next-ai-3framerwebsitefun-blue: rgba(27, 69, 156, 1);
+  --next-ai-3framerwebsitegreen-haze: rgba(0, 150, 94, 1);
+  --next-ai-3framerwebsiteheliotrope: rgba(178, 90, 249, 1);
+  --next-ai-3framerwebsitejade: rgba(0, 174, 100, 1);
+  --next-ai-3framerwebsitemine-shaft: rgba(34, 34, 34, 1);
+  --next-ai-3framerwebsitepersimmon: rgba(255, 113, 85, 1);
+  --next-ai-3framerwebsitepistachio: rgba(153, 204, 0, 1);
+  --next-ai-3framerwebsitepurple-heart: rgba(102, 51, 204, 1);
+  --next-ai-3framerwebsitered-orange: rgba(254, 59, 31, 1);
+  --next-ai-3framerwebsitescience-blue: rgba(0, 111, 207, 1);
+  --next-ai-3framerwebsitewhite: rgba(255, 255, 255, 1);
+  --next-ai-3framerwebsitewhite-10: rgba(255, 255, 255, 0.1);
+  --next-ai-3framerwebsitewhite-20: rgba(255, 255, 255, 0.2);
+  --next-ai-3framerwebsitewhite-5: rgba(255, 255, 255, 0.05);
+  --next-ai-3framerwebsitewhite-50: rgba(255, 255, 255, 0.5);
+  --next-ai-3framerwebsitewhite-70: rgba(255, 255, 255, 0.7);
+  --next-ai-3framerwebsitewhite-80: rgba(255, 255, 255, 0.8);
+  --next-ai-3framerwebsitewhite-black-pearl-black-pearl: rgba(255, 255, 255, 1);
+  --next-ai-3framerwebsitewoodsmoke: rgba(14, 15, 18, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

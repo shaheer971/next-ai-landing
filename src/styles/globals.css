@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --next-ai-3framerwebsiteabbey: rgba(76, 86, 106, 1);
+  --next-ai-3framerwebsiteapple: rgba(68, 189, 50, 1);
+  --next-ai-3framerwebsiteatlantis: rgba(151, 208, 25, 1);
+  --next-ai-3framerwebsiteblack: rgba(0, 0, 0, 1);
+  --next-ai-3framerwebsiteblack-pearl: rgba(1, 2, 5, 1);
+  --next-ai-3framerwebsitebrick-red: rgba(207, 69, 53, 1);
+  --next-ai-3framerwebsitecerulean: rgba(0, 154, 214, 1);
+  --next-ai-3framerwebsitecrimson: rgba(237, 28, 36, 1);
+  --next-ai-3framerwebsitedenim: rgba(21, 96, 189, 1);
+  --next-ai-3framerwebsiteecstasy: rgba(242, 101, 34, 1);
+  --next-ai-3framerwebsiteendeavour: rgba(0, 95, 182, 1);
+  --next-ai-3framerwebsitefun-blue: rgba(25, 118, 210, 1);
+  --next-ai-3framerwebsitegreen-haze: rgba(1, 152, 70, 1);
+  --next-ai-3framerwebsiteheliotrope: rgba(228, 87, 255, 1);
+  --next-ai-3framerwebsitejade: rgba(0, 168, 107, 1);
+  --next-ai-3framerwebsitemine-shaft: rgba(32, 32, 32, 1);
+  --next-ai-3framerwebsitepersimmon: rgba(255, 107, 0, 1);
+  --next-ai-3framerwebsitepistachio: rgba(130, 188, 43, 1);
+  --next-ai-3framerwebsitepurple-heart: rgba(97, 6, 165, 1);
+  --next-ai-3framerwebsitered-orange: rgba(255, 69, 0, 1);
+  --next-ai-3framerwebsitescience-blue: rgba(0, 102, 204, 1);
+  --next-ai-3framerwebsitewhite: rgba(255, 255, 255, 1);
+  --next-ai-3framerwebsitewhite-10: rgba(255, 255, 255, 0.1);
+  --next-ai-3framerwebsitewhite-20: rgba(255, 255, 255, 0.2);
+  --next-ai-3framerwebsitewhite-5: rgba(255, 255, 255, 0.05);
+  --next-ai-3framerwebsitewhite-50: rgba(255, 255, 255, 0.5);
+  --next-ai-3framerwebsitewhite-70: rgba(255, 255, 255, 0.7);
+  --next-ai-3framerwebsitewhite-80: rgba(255, 255, 255, 0.8);
+  --next-ai-3framerwebsitewhite-black-pearl-black-pearl: rgba(1, 2, 5, 1);
+  --next-ai-3framerwebsitewoodsmoke: rgba(16, 16, 17, 1);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
