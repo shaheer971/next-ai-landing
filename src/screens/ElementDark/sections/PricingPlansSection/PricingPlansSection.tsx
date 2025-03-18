@@ -45,14 +45,15 @@ export const PricingPlansSection = (): JSX.Element => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="w-full py-20 flex flex-col items-center"
+      id="pricing"
+      className="w-full py-8 md:py-20 flex flex-col items-center px-4 md:px-0"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-plus-jakarta text-[40px] font-medium text-white text-center mb-16"
+        className="font-plus-jakarta text-[28px] md:text-[40px] font-medium text-white text-center mb-8 md:mb-16"
       >
         Pricing plans
       </motion.h2>
@@ -62,7 +63,7 @@ export const PricingPlansSection = (): JSX.Element => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1300px] mx-auto px-6"
+        className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-[1300px] mx-auto w-full"
       >
         {plans.map((plan, index) => (
           <motion.div
@@ -73,15 +74,15 @@ export const PricingPlansSection = (): JSX.Element => {
             transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
           >
             <Card
-              className={`w-full h-full rounded-[20px] border border-white/10 ${plan.bgClass} overflow-hidden`}
+              className={`w-full h-full rounded-[16px] md:rounded-[20px] border border-white/10 ${plan.bgClass} overflow-hidden`}
             >
-              <CardHeader className="pt-8 pb-0 px-8">
+              <CardHeader className="pt-6 md:pt-8 pb-0 px-6 md:px-8">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                  className="font-plus-jakarta font-normal text-white text-base mb-4"
+                  className="font-plus-jakarta font-normal text-white text-base mb-3 md:mb-4"
                 >
                   {plan.name}
                 </motion.div>
@@ -92,7 +93,7 @@ export const PricingPlansSection = (): JSX.Element => {
                   transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
                   className="flex items-baseline"
                 >
-                  <span className="font-plus-helvetica text-[40px] font-medium text-white">
+                  <span className="font-plus-helvetica text-[32px] md:text-[40px] font-medium text-white">
                     {plan.price}
                   </span>
                   <span className="ml-1 font-plus-helvetica text-sm text-white/60">
@@ -101,19 +102,13 @@ export const PricingPlansSection = (): JSX.Element => {
                 </motion.div>
               </CardHeader>
 
-              <CardContent className="pt-8 px-8">
-                <motion.ul
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                  className="space-y-4"
-                >
+              <CardContent className="px-6 md:px-8 py-6 md:py-8">
+                <ul className="space-y-4">
                   {plan.features.map((feature, featureIndex) => (
                     <motion.li
                       key={featureIndex}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{
                         duration: 0.4,
@@ -127,39 +122,35 @@ export const PricingPlansSection = (): JSX.Element => {
                         viewBox="0 0 20 20"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5 md:w-5 md:h-5 flex-shrink-0"
                       >
                         <path
-                          d="M16.6668 5L7.50016 14.1667L3.3335 10"
+                          d="M16.6663 5L7.49967 14.1667L3.33301 10"
                           stroke="white"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="font-plus-jakarta text-sm font-light text-white/60">
+                      <span className="font-plus-jakarta text-sm md:text-base text-white/80">
                         {feature}
                       </span>
                     </motion.li>
                   ))}
-                </motion.ul>
+                </ul>
               </CardContent>
 
-              <CardFooter className="p-8">
+              <CardFooter className="px-6 md:px-8 pb-6 md:pb-8 pt-0">
                 <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
-                  className={`w-full h-12 rounded-md font-plus-jakarta text-sm font-medium
-                    ${
-                      index === 2
-                        ? "bg-white text-black hover:bg-white/90"
-                        : "bg-white/5 text-white border border-white/10 hover:bg-white/10"
-                    }`}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full h-12 md:h-14 bg-white/10 hover:bg-white/15 text-white font-plus-jakarta font-medium text-sm md:text-base rounded-lg transition-colors duration-200"
                 >
-                  Start free trial
+                  Get started
                 </motion.button>
               </CardFooter>
             </Card>

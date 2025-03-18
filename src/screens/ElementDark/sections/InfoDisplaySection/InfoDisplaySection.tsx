@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 import TiltedCard from "../../../../components/ui/tilted-card";
 import { motion } from "framer-motion";
@@ -65,23 +64,24 @@ const featuresData = [
 export const InfoDisplaySection = (): JSX.Element => {
   return (
     <motion.section 
+      id="about"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-[1224px] mx-auto py-16"
+      className="w-full max-w-[1224px] mx-auto py-8 md:py-16 px-4 md:px-0"
     >
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-center text-white font-plus-jakarta text-[40px] font-medium tracking-[var(--next-ai-3-framer-website-semantic-heading-2-letter-spacing)] leading-[var(--next-ai-3-framer-website-semantic-heading-2-line-height)] mb-16"
+        className="text-center text-white font-plus-jakarta text-[28px] md:text-[40px] font-medium tracking-[-0.5px] md:tracking-[var(--next-ai-3-framer-website-semantic-heading-2-letter-spacing)] leading-[1.2] md:leading-[var(--next-ai-3-framer-website-semantic-heading-2-line-height)] mb-8 md:mb-16"
       >
         Unparalleled advantages
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
         {featuresData.map((feature, index) => (
           <motion.div
             key={feature.id}
@@ -97,35 +97,38 @@ export const InfoDisplaySection = (): JSX.Element => {
               scaleOnHover={1.05}
             >
               <Card 
-                className="bg-black/10 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-white/20 transition-colors"
+                className="bg-black/10 backdrop-blur-sm border border-white/10 rounded-xl md:rounded-2xl hover:border-white/20 transition-colors"
               >
-                <CardContent className="flex flex-col items-center p-8">
-                  <div className="w-16 h-[67px] mb-8 overflow-hidden">
-                    {feature.backgroundImage ? (
-                      <div className="relative w-[67px] h-[67px] -left-0.5 bg-[url(public/clip-path-group.png)] bg-[100%_100%]" />
-                    ) : (
+                <CardContent className="p-6 md:p-8">
+                  {feature.icon ? (
+                    <div className="w-12 h-12 md:w-14 md:h-14 mb-6 md:mb-8">
                       <img
-                        className="w-[67px] h-[67px] -left-0.5"
-                        alt={`${feature.title} icon`}
                         src={feature.icon}
+                        alt={feature.title}
+                        className="w-full h-full"
                       />
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    <div 
+                      className="w-12 h-12 md:w-14 md:h-14 mb-6 md:mb-8 rounded-lg bg-cover bg-center"
+                      style={{
+                        backgroundImage: `url(${feature.backgroundImage})`,
+                      }}
+                    />
+                  )}
 
-                  <h3 className="font-plus-jakarta font-medium text-white text-[20px] text-center tracking-[var(--next-ai-3-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--next-ai-3-framer-website-semantic-heading-6-line-height)] whitespace-nowrap mb-3">
+                  <h3 className="text-white font-plus-jakarta text-xl md:text-2xl font-medium tracking-[-0.4px] md:tracking-[-0.8px] leading-[1.2] md:leading-[1.3] mb-3 md:mb-4">
                     {feature.title}
                   </h3>
 
-                  <div className="px-4 w-full">
-                    {feature.description.map((line, index) => (
-                      <p
-                        key={index}
-                        className="font-plus-jakarta font-light text-next-ai-3framerwebsitewhite-70 text-base text-center tracking-[0.16px] leading-[25.6px] break-words"
-                      >
+                  <p className="text-white/70 font-plus-jakarta text-base md:text-lg font-light leading-[1.5] md:leading-[1.6]">
+                    {feature.description.map((line, i) => (
+                      <span key={i}>
                         {line}
-                      </p>
+                        {i < feature.description.length - 1 && <br />}
+                      </span>
                     ))}
-                  </div>
+                  </p>
                 </CardContent>
               </Card>
             </TiltedCard>
