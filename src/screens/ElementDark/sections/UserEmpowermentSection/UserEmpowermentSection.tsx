@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card } from "../../../../components/ui/card";
 import { SplitText } from "../../../../components/ui/split-text";
